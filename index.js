@@ -155,7 +155,7 @@ module.exports = async (opts) => {
 
   ow(fps, ow.number.integer.positive, 'animationData.fr')
   ow(outPoint, ow.number.integer.positive, 'animationData.op')
-  ow(inPoint, ow.number.integer.positive, 'animationData.ip')
+  ow(inPoint, ow.number.integer.not.negative, 'animationData.ip')
   ow(w, ow.number.integer.positive, 'animationData.w')
   ow(h, ow.number.integer.positive, 'animationData.h')
 
